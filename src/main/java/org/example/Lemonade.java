@@ -51,4 +51,11 @@ public class Lemonade {
     //
     // HINT: You can get the counts from the two Lemonade objects using their get methods, e.g.:
     // int newLemonadeLemons = lemonade1.getLemons() + lemonade2.getLemons();
+    public static Lemonade mix(Lemonade input1, Lemonade input2) {
+        int newLemons = input1.getLemons() + input2.getLemons();
+        int newSugar = input1.getSugar() + input2.getSugar();
+        int newIce = input1.getIce() + input2.getIce();
+
+        return new Lemonade(newLemons, newSugar, newIce);
+    }
 }
