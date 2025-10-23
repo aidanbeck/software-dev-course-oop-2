@@ -41,4 +41,12 @@ public class LemonadeTests {
         assertEquals(5, lemonade3.getSugar());
         assertEquals(5, lemonade3.getIce());
     }
+
+    @Test
+    public void testMixEdgeCases() {
+        Lemonade lemonade1 = new Lemonade();
+        assertEquals(null, lemonade1.getLemons());
+        assertEquals(null, lemonade1.getSugar());
+        assertEquals(null, lemonade1.getIce());
+    }
 }
